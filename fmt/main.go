@@ -73,4 +73,12 @@ func main() {
 	var day, month int
 	fmt.Sscanf("01-02", "%02d-%02d", &day, &month)
 	fmt.Printf("Sscanf read: %d %d\n", day, month) // Sscanf read: 1 2
+
+	// String formatting
+	fmt.Printf("%5d\n", 55)     //    55 -> min 5 char
+	fmt.Printf("%5d\n", 559898) // 559898
+
+	fmt.Printf("|%10s|\n", "Hello") // |     Hello|
+	fmt.Printf("|%-10s|\n", "Hello") // |Hello     |
+
 }
